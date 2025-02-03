@@ -8,13 +8,13 @@
     "saddemlabidi/module-shopfinder": "*"
   },
   "type": "magento2-module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "autoload": {
     "files": [
       "registration.php"
     ],
     "psr-4": {
-      "'Saddemlabidi\\ShopfinderRest\\": ""
+      "Saddemlabidi\\ShopfinderRest\\": ""
     }
   }
 }

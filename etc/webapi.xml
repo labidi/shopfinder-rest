@@ -10,7 +10,7 @@
     </route>
 
     <route url="/V1/shopfinder/shop/:id" method="DELETE">
-        <service class="Saddemlabidi\ShopfinderRest\Model\DeleteShop" method="delete"/>
+        <service class="Saddemlabidi\ShopfinderRest\Api\DeleteShopInterface" method="delete"/>
         <resources>
             <resource ref="anonymous"/>
         </resources>
