@@ -2,8 +2,9 @@
 
 declare(strict_types=1);
 
-use Magento\Framework\Webapi\Exception;
 namespace Saddemlabidi\ShopfinderRest\Api;
+
+use Magento\Framework\Webapi\Exception;
 
 interface DeleteShopInterface
 {
