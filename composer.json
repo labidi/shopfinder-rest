@@ -1,5 +1,5 @@
 {
-  "name": "Saddemlabidi/module-shopfinder-rest",
+  "name": "saddemlabidi/module-shopfinder-rest",
   "description": "Magento 2 admin enable REST endpoint  shopfinder",
   "require": {
     "magento/framework": "*",
