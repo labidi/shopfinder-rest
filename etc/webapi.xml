@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/webapi.xsd">
+
+    <route url="/V1/shopfinder/shops/search" method="GET">
+        <service class="Saddemlabidi\Shopfinder\Api\ShopRepositoryInterface" method="getList"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+    <route url="/V1/shopfinder/shop/:id" method="DELETE">
+        <service class="Saddemlabidi\ShopfinderRest\Model\DeleteShop" method="delete"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+    <route url="/V1/shopfinder/shop" method="PUT">
+        <service class="Saddemlabidi\Shopfinder\Api\ShopRepositoryInterface" method="save"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+    <route url="/V1/shopfinder/shop/:identifier" method="GET">
+        <service class="Saddemlabidi\Shopfinder\Api\ShopRepositoryInterface" method="getByIdentifier"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+</routes>
